@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_float.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      div.wrap {
+        width: 800px;
+        height: 500px;
+        background-color: yellow;
+        border: 1px solid;
+        border-bottom: 0;
+      }
+
+      div.wrap div#header {
+        width: 800px;
+        height: 100px;
+        background-color: mediumaquamarine;
+        font: italic 30px bold;
+        line-height: 100px;
+      }
+
+      div.wrap div.clomn_left {
+        width: 450px;
+        height: 400px;
+        background-color: palegreen;
+        font-size: 20px;
+        float: left;
+        border: 1px solid;
+      }
+
+      div.clomn_left div {
+        border: 1px solid;
+      }
+
+      div.box2 {
+        width: 200px;
+        height: 150px;
+        background-color: blue;
+        float: right;
+      }
+
+      div.box3 {
+        width: 150px;
+        height: 200px;
+        background-color: blueviolet;
+        float: left;
+      }
+      div.wrap div.clomn_right {
+        width: 250px;
+        height: 400px;
+        background-color: skyblue;
+        float: right;
+        font: 20px "굴림체";
+      }
+
+      div.clomn_right div {
+        border: 1px solid;
+      }
+
+      div.box4 {
+        width: 50px;
+        height: 300px;
+        background-color: burlywood;
+        float: left;
+      }
+
+      div.box5 {
+        width: 100px;
+        height: 20px;
+        background-color: lawngreen;
+        float: right;
+      }
+
+      div.box6 {
+        width: 10px;
+        height: 10px;
+        background-color: honeydew;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1" id="header">행복한 하루</div>
+      <div class="clomn_left">
+        배우는 하루
+        <div class="box2">신난다</div>
+        <div class="box3">재미난다</div>
+      </div>
+      <div class="clomn_right">
+        활기찬 하루
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+      </div>
+    </div>
+  </body>
+</html>
